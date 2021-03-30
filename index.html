@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Among Us Picker-Triple7Rules</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+
+$(document).ready(function(){
+    // Get value on button click and show alert
+    $("#myBtn").click(function(){
+
+		var flname = $("#flname").val();
+        
+
+		
+		document.getElementById("demo").innerHTML =
+Math.floor(Math.random() * flname);
+
+    });
+});
+
+
+</script>
+</head>
+<body>
+
+
+    <input type="number" id="flname" placeholder="Players">
+
+	<br><br>
+    <button type="button"  id="myBtn">Submit</button>
+	<br>
+	<br>
+<p id="demo"></p>
+</body>
+</html>
